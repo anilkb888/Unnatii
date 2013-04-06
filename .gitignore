@@ -1,5 +1,6 @@
 #################
 ## Eclipse
 #################
-target/*
-
+Unnatii/target/*
+Unnatii/.classpath
+Unnatii/.settings/*
