@@ -103,6 +103,6 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "feedback";
+		return "contact";
 	}
 }
