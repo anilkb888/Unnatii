@@ -2,7 +2,7 @@
 <div style="padding-left: 75%;padding-top: 1%;" >
   				<a href="${pageContext.servletContext.contextPath}/contact" ><img src="${pageContext.servletContext.contextPath}/resources/images/contactUs.png"  style="padding-left:10px;"  /></a>
                 <img src="${pageContext.servletContext.contextPath}/resources/images/followUs.png"  style="padding-left:20px;"  />
-                <a href="${pageContext.servletContext.contextPath}/contact" ><img src="${pageContext.servletContext.contextPath}/resources/images/fb.png"  style="padding-left:10px;"  /></a>
+                <a href="https://www.facebook.com/pages/Unnatii-Global-Supply-Solutions/584533731574884"  target="_blank"><img src="${pageContext.servletContext.contextPath}/resources/images/fb.png"  style="padding-left:10px;"  /></a>
                  <a href="${pageContext.servletContext.contextPath}/contact" ><img src="${pageContext.servletContext.contextPath}/resources/images/twitter.png"  style="padding-left:5px;"  /></a>
   </div>
 	<div class="header">

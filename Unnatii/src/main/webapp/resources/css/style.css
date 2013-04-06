@@ -123,3 +123,10 @@ font-variant: small-caps;
 	width: 369px;
 	height: 20px;
 }
+
+.text-style
+{
+	
+	font-family: arial;
+font-weight: bold;
+}
