@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.unnatii.in.common.MailServer;
 import com.unnatii.in.model.Contact;
 import com.unnatii.in.services.ContactService;
 
@@ -17,6 +18,9 @@ public class ContactUsController {
 
 		@Autowired
 		private ContactService contactService;
+		
+		@Autowired
+		MailServer mailService ;
 	
 	   @RequestMapping(value = "/contact", method = RequestMethod.GET)
 	   public ModelAndView contact() {
@@ -31,6 +35,13 @@ public class ContactUsController {
 		   {
 					  contactService.addContact(contact);
 					  model.addAttribute("name", contact.getName());
+					  
+					/*  mailService.sendMail("unnatiigss@gmail.com", "unnatiigss@gmail.com", "Enquiry From Web - "+ contact.getId(), 
+					  "Name : "+ contact.getName() +"\n \n Phone Number : " + contact.getTelephone() + " \n\n  Description : " + contact.getDescription());
+				        */
+				      //mailService.sendAlertMail("Exception occurred");
+				        
+						
 					 /* model.addAttribute("email", contact.getEmail());
 					  model.addAttribute("phone", contact.getTelephone());
 					  model.addAttribute("description", contact.getDescription());
