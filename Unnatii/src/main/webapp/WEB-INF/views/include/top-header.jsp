@@ -24,7 +24,7 @@
 				Get Instance Quote : Call +91 900 887 7223</font>
 			</span>
 			<span style="padding-left: 45%; width: 80%; padding-top: 3px;"> 
-				<a href="${pageContext.servletContext.contextPath}/enquiry" target="_blank" title="Request A Quote"><b> <font color="#FFFFFF" size="-1">Request a Quote</font> </b></a>
+				<a href="${pageContext.servletContext.contextPath}/enquiry" target="_blank" title="Request A Quote" style="text-decoration: underline;"><b> <font color="#FFFFFF" size="-1">Request a Quote</font> </b></a>
 			</span>
 				
 		</div>

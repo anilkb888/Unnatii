@@ -54,9 +54,12 @@
 </div>
 
 
-<div style="padding-top: 30px;">
+<span style="padding-top: 30px; width:50%;">
 <h2>Contact Us</h2>
+
 <form:form method="POST" action="${pageContext.servletContext.contextPath}/addContact" onsubmit="return validate();">
+<table><tr>
+  <td>
    <table>
     <tr>
         <td><form:label class="label-Font" path="name">Name<font color="red">*</font></form:label></td>
@@ -75,13 +78,33 @@
         <td><form:textarea path="description" id="txtdesc" class="text-box" style="height:75px;" placeholder="My Needs And Enquiry "/></td>
     </tr>
    
-    <tr>
+    <tr style="text-align: center;">
         <td colspan="2">
             <input type="submit" value="Done" class="button"/>
+            <input type="reset" value="Reset" class="button"/>
+            
         </td>
+      
+
     </tr>
-</table>  
+</table> 
+</td>
+<td>
+<table width="100%"><tr>
+  <td colspan="2">
+                   <div style="margin-left:175px;">
+                   <font style="font-family: serif;">
+                   <p><b style="font-weight: bold;font-size: 16px;">Unnatii Global Supply Solutions</b></p>
+					<p>71/1, 2nd cross, Magadi Road,</p> 
+					<p>Cholurpalya, Bangalore -560026</p></font>
+					</div>
+        </td>
+</tr></table> 
+</td>
+</tr></table>
 </form:form>
-</div >
+</span >
+
+
 
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>

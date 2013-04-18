@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.unnatii.in.model.Contact;
 
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -19,9 +20,16 @@ public class ContactDAOImpl implements ContactDAO {
 	}
 
 	public List<Contact> listContact() {
-
-		return sessionFactory.getCurrentSession().createQuery("from Contact_us")
-				.list();
+		
+		Query qry;
+		qry=sessionFactory.getCurrentSession().createQuery("from Contact ORDER BY ID DESC");
+		//qry.setFirstResult(startPoint);
+		//qry.setMaxResults();
+		return qry.list();
+		//return sessionFactory.getCurrentSession().createQuery("from Contact")
+			//	.list();
+		
+				//return sessionFactory.getCurrentSession().createQuery("").list();
 	}
 
 	public void removeContact(Integer id) {

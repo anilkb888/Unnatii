@@ -20,7 +20,7 @@ public class SpecDAOImpl implements SpecDAO {
 	}
 
 	public List<SpecSheet> listSpecSheet() {
-		return sessionFactory.getCurrentSession().createQuery("from quoteRequest").list();
+		return sessionFactory.getCurrentSession().createQuery("from SpecSheet ORDER BY ID DESC").list();
 	}
 
 	public void removeSpec(Integer id) {
