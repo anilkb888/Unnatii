@@ -9,7 +9,7 @@
 
 
 <div style="font-size:  inherit;">
-<form:form method="POST" action="${pageContext.servletContext.contextPath}/GetQtsDtls">
+<form:form method="POST" action="${pageContext.servletContext.contextPath}/admin/GetQts">
 <br/>
 <span align="center"><input type="submit" value="Get Quote Details" style="width: 400px;font-face: 'Comic Sans MS'; font-size: larger; color: black; background-color: red; border: 3pt lightgrey" class="button"/></span>
  <br/> 

@@ -8,5 +8,8 @@
 </head>
 <body>
 Dashboard Page
+<br/>
+<a href="${pageContext.servletContext.contextPath}/admin/GetCncts"> Get Contact Details</a><br/>
+<a href="${pageContext.servletContext.contextPath}/admin/GetQts"> Get Quote Details</a>
 </body>
 </html>

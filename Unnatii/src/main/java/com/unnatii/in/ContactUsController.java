@@ -1,6 +1,5 @@
 package com.unnatii.in;
 
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,14 +59,15 @@ public class ContactUsController {
 		 //  return "redirect:/index";
 	   }
 	   
-	   
-	   @RequestMapping(value = "/GetCncts", method = RequestMethod.GET)
+	   @RequestMapping(value = "/admin/GetCncts", method = RequestMethod.GET)
 	   public ModelAndView GetDtls() {
-	      return new ModelAndView("GetContacts", "command", new Contact());
+		   System.out.println("gdhssssssssssssssssssssssssssssssssss");
+	      return new ModelAndView("/admin/GetContacts", "command", new Contact());
 	   }
 	   
+	   
 	  // @RequestMapping(value = "/GetDetails", method = RequestMethod.POST)
-	   @RequestMapping(value = "/GetDetails", method = RequestMethod.POST)
+	   @RequestMapping(value = "/admin/GetCncts", method = RequestMethod.POST)
 	   public String  GetDetails(Map<String, Object> map) {
 		 System.out.println("hdss");
 		    map.put("contact", new Contact());
@@ -83,7 +83,8 @@ public class ContactUsController {
 		   return new ModelAndView("thankyou");
 		   */
 	   
-	        return "GetContacts";
+	        return "/admin/GetContacts";
+	       // return "redirect:/admin/GetCncts";
 	   } 
 	   
 	   
@@ -106,13 +107,13 @@ public class ContactUsController {
 			 return new ModelAndView("/GetCncts", "contactList", contactService.listContact());
 		       // return "GetContacts";
 		   }*/
-	   @RequestMapping("/delete/{contactId}")
+	   @RequestMapping("/admin/delete/{contactId}")
 	    public String deleteContact(@PathVariable("contactId")
 	    Integer contactId) {
 	 
 	        contactService.removeContact(contactId);
 	 
-	        return "redirect:/GetCncts";
+	        return "/admin/GetContacts";
 	    }
 
 	

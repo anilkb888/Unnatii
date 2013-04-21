@@ -47,10 +47,10 @@ public class SpecSheetController {
 
 	   @RequestMapping(value = "/admin/GetQts", method = RequestMethod.GET)
 	   public ModelAndView GetDtls() {
-	      return new ModelAndView("admin/GetQuotes", "comman", new SpecSheet());
+	      return new ModelAndView("/admin/GetQuotes", "comman", new SpecSheet());
 	   }
 	   
-	   @RequestMapping(value = "/admin/GetQtsDtls", method = RequestMethod.POST)
+	   @RequestMapping(value = "/admin/GetQts", method = RequestMethod.POST)
 	   public String  GetDetails(Map<String, Object> map) {
 		 System.out.println("hdss");
 		    map.put("spec", new SpecSheet());
@@ -65,7 +65,7 @@ public class SpecSheetController {
 		   }
 		   return new ModelAndView("thankyou");
 	   */
-	        return "admin/GetQuotes";
+	        return "/admin/GetQuotes";
 	   }
 	   
 	   @RequestMapping("/admin/deleteQuote/{specId}")

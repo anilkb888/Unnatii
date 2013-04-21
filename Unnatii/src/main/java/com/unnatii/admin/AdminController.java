@@ -13,7 +13,7 @@ public class AdminController {
 	public String printWelcome(ModelMap model) {
  
 		model.addAttribute("message", "Spring Security Hello World");
-		return "admin/dashboard";
+		return "/admin/dashboard";
  
 	}
  
@@ -21,7 +21,7 @@ public class AdminController {
 	@RequestMapping(value="/login", method = RequestMethod.GET)
 	public String login(ModelMap model) {
  
-		return "admin/login";
+		return "/admin/login";
  
 	}
  
@@ -29,14 +29,14 @@ public class AdminController {
 	public String loginerror(ModelMap model) {
  
 		model.addAttribute("error", "true");
-		return "admin/login";
+		return "/admin/login";
  
 	}
  
 	@RequestMapping(value="/logout", method = RequestMethod.GET)
 	public String logout(ModelMap model) {
  
-		return "admin/login";
+		return "/admin/login";
  
 	}
 	
