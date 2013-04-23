@@ -7,7 +7,7 @@
 <table  id="box-table-a" >
 <thead>
 <tr >
-    <th >Name</th>
+    <th>Name</th>
     <th>Email</th>
     <th>Telephone</th>
     <th>Company</th>

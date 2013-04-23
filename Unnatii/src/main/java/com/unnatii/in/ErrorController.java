@@ -16,4 +16,10 @@ public class ErrorController {
 	public String error500(){
 		return "500";
 	}
+	
+	@RequestMapping(value="/under")
+	public String underConstruction(){
+		return "error/underConstruction";
+	}
+
 }
