@@ -45,32 +45,23 @@ public class SpecSheetController {
 	   }
 	
 
-	   @RequestMapping(value = "/admin/GetQts", method = RequestMethod.GET)
+	  /* @RequestMapping(value = "/admin/listQuotes", method = RequestMethod.GET)
 	   public ModelAndView GetDtls() {
 	      return new ModelAndView("/admin/GetQuotes", "comman", new SpecSheet());
-	   }
+	   }*/
 	   
-	   @RequestMapping(value = "/admin/GetQts", method = RequestMethod.POST)
+	   @RequestMapping(value = "/admin/listQuotes", method = RequestMethod.GET)
 	   public String  GetDetails(Map<String, Object> map) {
-		 System.out.println("hdss");
+		 
 		    map.put("spec", new SpecSheet());
 	        map.put("specList", specService.listSpecSheet());
 
-		  // List<Contact>   lst;
-		   //lst= contactService.listContact();
-		 /*  for(int i=0;i < lst.size() ; i++)
-		   {
-			 System.out.println(" "+ lst.get(i).getName());  
-			 model.addAttribute("name",lst.get(0).getName());
-		   }
-		   return new ModelAndView("thankyou");
-	   */
+		
 	        return "/admin/GetQuotes";
 	   }
 	   
 	   @RequestMapping("/admin/deleteQuote/{specId}")
-	    public String deleteContact(@PathVariable("specId")
-	    Integer specId) {
+	    public String deleteContact(@PathVariable("specId") Integer specId) {
 	 
 		   specService.removeSpec(specId);
 	 

@@ -7,9 +7,9 @@
 
 	<http auto-config="true">
 		<intercept-url pattern="/admin/*" access="ROLE_USER" />
-		<form-login login-page="/login" default-target-url="/admin/dashboard"
-			authentication-failure-url="/loginfailed" />
+		<form-login login-page="/login" default-target-url="/admin/dashboard" authentication-failure-url="/loginfailed" />
 		<logout logout-success-url="/logout" />
+		
 	</http>
 
 	<authentication-manager>

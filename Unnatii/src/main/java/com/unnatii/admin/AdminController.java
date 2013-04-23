@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class AdminController {
  
-	@RequestMapping(value="/admin",method = RequestMethod.GET)
+	@RequestMapping(value="/admin/dashboard",method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
  
 		model.addAttribute("message", "Spring Security Hello World");
 		return "/admin/dashboard";
- 
+		
 	}
  
 	
@@ -41,5 +41,3 @@ public class AdminController {
 	}
 	
 }
-
-
