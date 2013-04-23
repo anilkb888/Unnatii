@@ -2,7 +2,7 @@
 
 <div class="box-content" style="height:300px;">
 
-<h3>Contacts Details</h3>
+<h3 style="font-size: 20px;color: #333;padding: 2px 0;margin: 0 auto;">Contacts Details</h3>
 <c:if  test="${!empty contactList}">
 <div style="width:100%;overflow-y:auto;">
 <table id="box-table-a" style="background-color:white;">

@@ -1,7 +1,7 @@
 <%@ include file="/WEB-INF/views/include/adminInclude.jsp" %>
 <div style="font-size:  inherit;">
 
-<h3>Quote Details</h3>
+<h3 style="font-size: 20px;color: #333;padding: 2px 0;margin: 0 auto;">Quote Details</h3>
 <c:if  test="${!empty specList}">
 <div style="width:100%;overflow-y:auto;">
 <table  id="box-table-a" >
