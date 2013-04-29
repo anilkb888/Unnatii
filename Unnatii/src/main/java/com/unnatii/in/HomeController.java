@@ -29,7 +29,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String root(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		//logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -43,7 +43,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		//logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -57,7 +57,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/about", method = RequestMethod.GET)
 	public String about(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		//logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -73,7 +73,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String product(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		//logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -87,7 +87,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/services", method = RequestMethod.GET)
 	public String service(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		//logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
