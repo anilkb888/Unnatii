@@ -21,5 +21,9 @@
 		<!-- end .header -->
 	</div>
 
+<div class="float-btn" >
+  <a href="${pageContext.servletContext.contextPath}/contact" ><img src="${pageContext.servletContext.contextPath}/resources/images/feedback.jpg" /></a>
+  <a href="${pageContext.servletContext.contextPath}/enquiry" ><img src="${pageContext.servletContext.contextPath}/resources/images/requestQuote.jpg" /></a>
+</div>
 
 	<div class="content">
