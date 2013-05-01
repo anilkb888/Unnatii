@@ -6,7 +6,8 @@
 	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
 	<http auto-config="true">
-		<intercept-url pattern="/admin/*" access="ROLE_USER" />
+		<intercept-url pattern="/admin/*" access="ROLE_ADMIN" />
+		<intercept-url pattern="/user/*" access="ROLE_USER"/>
 		<form-login login-page="/login" default-target-url="/admin/dashboard" authentication-failure-url="/loginfailed" />
 		<logout logout-success-url="/logout" />
 		

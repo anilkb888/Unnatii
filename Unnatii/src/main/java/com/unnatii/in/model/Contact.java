@@ -4,11 +4,24 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="CONTACT_US")
 public class Contact {
+	public Contact()
+	{
+		
+	}
+	public Contact(Integer id,String name,String email,String telephone,String description)
+	{
+	this.id=id;
+	this.description=name;
+	this.email=email;
+	this.name=name;
+	this.telephone=telephone;
+	}
 	
 	@Id
 	@Column(name="ID")
@@ -28,7 +41,16 @@ public class Contact {
 	
 	@Column(name="DESCRIPTION")
 	private String description;
+	
+	@OneToOne
+	private ReplyContact replyContact;
 
+	public ReplyContact getReplyContact() {
+		return replyContact;
+	}
+	public void setReplyContact(ReplyContact replyContact) {
+		this.replyContact = replyContact;
+	}
 	public Integer getId() {
 		return id;
 	}

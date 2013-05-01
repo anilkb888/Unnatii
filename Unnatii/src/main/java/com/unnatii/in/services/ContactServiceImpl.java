@@ -27,7 +27,14 @@ public class ContactServiceImpl implements ContactService {
 
 		return contactDAO.listContact();
 	}
-
+	
+	@Required
+	public List<Contact> listSpecificContact(Integer contactId)
+	{
+		return contactDAO.listSpecificContact(contactId);
+	}
+	
+	
 	@Required
 	public void removeContact(Integer id) {
 		contactDAO.removeContact(id);

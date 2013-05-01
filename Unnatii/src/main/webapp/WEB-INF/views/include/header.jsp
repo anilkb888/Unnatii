@@ -13,7 +13,7 @@
 			<span style="padding-left: 43%;"> 
 					<a href="${pageContext.servletContext.contextPath}/home"><img src="${pageContext.servletContext.contextPath}/resources/images/home.png" style="padding-left: 30px;" alt="Home"/></a>
 					<a href="${pageContext.servletContext.contextPath}/about"><img src="${pageContext.servletContext.contextPath}/resources/images/about.png" style="padding-left: 30px;" alt="About"/></a> 
-				<!-- 	<a href="${pageContext.servletContext.contextPath}/products"><img src="${pageContext.servletContext.contextPath}/resources/images/products.png" style="padding-left: 30px;" /></a>
+				<!-- <a href="${pageContext.servletContext.contextPath}/products"><img src="${pageContext.servletContext.contextPath}/resources/images/products.png" style="padding-left: 30px;" /></a>
 					<a href="${pageContext.servletContext.contextPath}/services"><img src="${pageContext.servletContext.contextPath}/resources/images/services.png" style="padding-left: 30px;" /></a>  --> 
 					<a href="${pageContext.servletContext.contextPath}/contact"><img src="${pageContext.servletContext.contextPath}/resources/images/feedback.png" style="padding-left: 30px;" alt="Feedback"  /></a>
 			</span>
