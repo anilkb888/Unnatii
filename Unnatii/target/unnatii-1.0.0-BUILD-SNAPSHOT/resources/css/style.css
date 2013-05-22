@@ -41,7 +41,7 @@ a{
 
 /* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
 .container {
-	width: 80%;
+	width: 70%;
 	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
 	min-width: 700px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
@@ -53,6 +53,10 @@ a{
 	/*border-bottom-style:dashed;
 	border-bottom-color:#000;
 	border-bottom-width:2px;*/
+	
+}
+.headerSub {
+	margin-top:30px;
 	
 }
 .header_top{
@@ -96,8 +100,17 @@ a{
 
 .box-content{
 	padding-top:50px;
+	width:100%;
+	margin:0 auto;
 	
 	}
+.box-content a img{
+	
+	width:29%;
+	
+	
+	}	
+	
 .one-edge-shadow {
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
@@ -287,8 +300,7 @@ input[type="password"],input[type="text"]{width:262px;font-family:din-med;font-s
 	border-right: 1px solid #aabcfe;
 	border-left: 1px solid #aabcfe;
 	color: #669;
-	width:50px;
-	height:300px;
+	
 }
 
 .float-btn{
@@ -296,4 +308,79 @@ input[type="password"],input[type="text"]{width:262px;font-family:din-med;font-s
 	z-index: 100;
 	top: 180px;
 	right: 0;
+	width:50px;
+	height:300px;
+}
+.main_menu
+{
+    height:30px;
+    line-height:30px;
+    color:#FFF;
+    position:relative;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+.main_menu ul
+{
+    padding:0px;
+    margin:0;
+    list-style:none;
+}
+.main_menu ul li
+{
+    padding:0;
+    margin:0;
+    border-right:1px solid #000000;
+    float:left;
+    background:#333333;
+}
+.main_menu ul li a
+{
+    color:#FFF;
+    display:block;
+    text-decoration:none;
+    padding:0 25px;
+}
+.main_menu ul li a:hover
+{
+    background:#3ea5ea;
+    color:#000;
+}
+.main_menu ul li ul
+{
+     display: none; 
+     width: auto;
+     position:absolute;
+     top:30px;
+     padding:0px;
+     margin:0px;
+}
+.main_menu ul li:hover ul
+{
+     display: block;
+     position: absolute;
+     margin: 0;
+     padding: 0; 
+}
+.main_menu ul li:hover li
+{
+    float: none;
+    list-style:none;
+    margin:0px;
+}
+.main_menu ul li:hover li
+{
+    background:#333;
+    border-top:1px solid #000000;
+}
+.main_menu ul li:hover li a
+{
+    color: #fff;
+    padding:0 20px;
+    display:block;
+    width:170px;
+}
+.main_menu ul li li a:hover
+{
+    color:#000;
 }

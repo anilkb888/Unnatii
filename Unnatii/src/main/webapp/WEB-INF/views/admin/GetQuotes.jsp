@@ -7,6 +7,7 @@
 <table  id="box-table-a" >
 <thead>
 <tr >
+	<th>ID</th>
     <th>Name</th>
     <th>Email</th>
     <th>Telephone</th>
@@ -17,7 +18,8 @@
 <tbody>
 <c:forEach items="${specList}" var="spec">
     <tr>
-        <td>${spec.firstname} &nbsp; ${spec.lastname}</td>
+    	 <td><a href="${pageContext.servletContext.contextPath}/admin/replyQuote/${spec.id}"><U><Font color="red">${spec.id}</Font></U></a></td>
+    	<td>${spec.firstname} &nbsp; ${spec.lastname}</td>
 		<td>${spec.email}</td>
         <td>${spec.phone}</td>
         <td>${spec.company}</td>

@@ -10,10 +10,16 @@ import javax.persistence.Table;
 @Table(name="Reply_Contact")
 public class ReplyContact {
 	
+	
 	@Id
 	@Column(name="ID")	
 	@GeneratedValue
 	private Integer id;
+	
+	@Column(name="ContactID")
+	private Integer contact_id;
+	
+
 	
 
 	@Column(name="EMAIL")
@@ -33,12 +39,22 @@ public class ReplyContact {
 		this.id = id;
 	}
 
+	
+
 	public String getEmail() {
 		return email;
 	}
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public Integer getContact_id() {
+		return contact_id;
+	}
+
+	public void setContact_id(Integer contact_id) {
+		this.contact_id = contact_id;
 	}
 
 	public String getSubject() {
@@ -57,4 +73,6 @@ public class ReplyContact {
 		this.description = description;
 	}
 
+	
+	
 }

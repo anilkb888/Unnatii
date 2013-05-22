@@ -5,7 +5,7 @@
                  
   </div>
 	<div class="header">
-				<a href="${pageContext.servletContext.contextPath}/home">
+				<a href="${pageContext.servletContext.contextPath}/admin/dashboard">
 				<img src="${pageContext.servletContext.contextPath}/resources/images/logo.png" class="logo" alt="Unnatii - Global Solutions" name="Unnatii - Global Solutions" width="190px" height="60px"/>
 				</a> 
 

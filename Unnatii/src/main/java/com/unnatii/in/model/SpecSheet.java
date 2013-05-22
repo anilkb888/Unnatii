@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 //import javax.validation.constraints.NotNull;
 
@@ -15,11 +16,44 @@ import javax.persistence.Table;
 @Table(name="QuoteRequest")
 public class SpecSheet {
 	
+	/*public SpecSheet()
+	{
+		
+	}
+	
+	public SpecSheet(Integer id,String firstname,String lastname,String company,String phone,String email,String address,String pincode,String city,String state,String via,String product,String quantity,String expectedby,String budget,String reqDesc)
+	{
+		this.address=address;
+		this.budget=budget;
+		this.city=city;
+		this.company=company;
+		this.email=email;
+		this.expectedby=expectedby;
+		this.firstname=firstname;
+		this.id=id;
+		this.lastname=lastname;
+		this.phone=phone;
+		this.pincode=pincode;
+		this.product=product;
+		this.quantity=quantity;
+		this.reqDesc=reqDesc;
+		this.state=state;
+		this.via=via;
+	}*/
+	
+	
+
 	@Id
 	@Column(name="ID")
 	@GeneratedValue
 	private Integer id;
 //kore ebo.d	sala eta kadd i baal field kichu onno r data variable r kichu??
+	
+	@OneToOne
+	private ReplyQuote replyQuote;
+	
+	
+	
 	
 	@Column(name="FirstName")
 	private String firstname;
@@ -69,6 +103,15 @@ public class SpecSheet {
 	
 	@Column(name="ReqDesc")
 	private String reqDesc;
+	
+	
+	public ReplyQuote getReplyQuote() {
+		return replyQuote;
+	}
+
+	public void setReplyQuote(ReplyQuote replyQuote) {
+		this.replyQuote = replyQuote;
+	}
 
 	public Integer getId() {
 		return id;

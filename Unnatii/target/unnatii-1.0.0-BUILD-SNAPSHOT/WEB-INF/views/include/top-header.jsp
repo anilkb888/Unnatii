@@ -18,13 +18,13 @@
 <body>
 	<div class="header_top">
 
-		<div >
-			<span style="padding-left: 11%; width: 80%; padding-top: 3px;">
+		<div style="width: 70%; margin:0 auto; height:40px;">
+			<span style="width: 60%; padding-top: 3px;">
 			<img src="${pageContext.servletContext.contextPath}/resources/images/flag.png" />&nbsp; <font color="#FFFFFF" size="-1" title="May I HELP YOU !! ">
 				Get Instance Quote : Call +91 900 887 7223</font>
 			</span>
-			<span style="padding-left: 45%; width: 80%; padding-top: 3px;"> 
-				<a href="${pageContext.servletContext.contextPath}/enquiry" target="_blank" title="Request A Quote" style="text-decoration: underline;"><b> <font color="#FFFFFF" size="-1">Request a Quote</font> </b></a>
+			<span style="float:right; width: 40%; padding-top: 3px;"> 
+				<a style="float:right;" href="${pageContext.servletContext.contextPath}/enquiry" target="_blank" title="Request A Quote" style="text-decoration: underline;"><b> <font color="#FFFFFF" size="-1">Request a Quote</font> </b></a>
 			</span>
 				
 		</div>

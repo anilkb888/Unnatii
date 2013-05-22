@@ -1,11 +1,12 @@
 <%@ include file="/WEB-INF/views/include/adminInclude.jsp" %>
 
+<!-- <%@ include file="/WEB-INF/views/include/slider.jsp" %> -->
 <script type="text/javascript">
     function validate(){
 	var varname=document.getElementById("txtname");
-	var varemail=document.getElementById("txtemail");
+	var varemail=document.getElementById("txtemail2");
 	var vartelephone=document.getElementById("txttelephone");
-	var vardesc=document.getElementById("txtdesc");
+	var vardesc=document.getElementById("txtreplydescription");
 	
 	if (varname.value==null || varname.value=="")
 	   {
@@ -17,11 +18,7 @@
 	   alert("Please provide Email");
 	    return false;
 	   }
-	if (vartelephone.value==null || vartelephone.value=="")
-	   {
-	   alert("Please provide Telephone No.");
-	    return false;
-	   }
+	
 	if (vardesc.value==null || vardesc.value=="")
 	   {
 	   alert("Please provide Description");
@@ -37,45 +34,51 @@
 	   alert("Please enter a valid e-mail address");
 	   return false;
 	   }
+	 	
+	 	/*if (vartelephone.value==null || vartelephone.value=="")
+		   {
+		   alert("Please provide Telephone No.");
+		    return false;
+		   }
 	 	if (isNaN(vartelephone.value))
 	 	{
 	 		alert("Please enter a valid phone number");	
 	 		 return false;
-	 	}
+	 	}*/
 	
 }
 </script>
 
 
 
-<span style="padding-top: 30px; width:50%;">
+<div class="main_wrapper">
 
 
-<form:form method="POST" action="${pageContext.servletContext.contextPath}/addContactReply" onsubmit="return validate();">
+<form:form method="POST" action="${pageContext.servletContext.contextPath}/admin/addContactReply" onsubmit="return validate();">
 <fieldset class="grey_bg">
  <legend><h2>Feedback Details</h2></legend>
-<table style= "border:10px;width:100%;"><tr>
+<table style= "border:40px;width:100%;"><tr>
   <td>
    <table>
    <tr>
         <td><form:label class="label-Font" path="id">ID</form:label></td>
-        <td><form:input path="id" id="txtname" class="text-box"   readonly="true"/></td>
+        <td><form:input path="id" id="txtname" class="text-box" readonly="true" style="background-color: #EBEAEA;"/></td>
     </tr>
     <tr>
         <td><form:label class="label-Font" path="name">Name</form:label></td>
-        <td><form:input path="name" id="txtname" class="text-box"   readonly="true"/></td>
+        <td><form:input path="name" id="txtname" class="text-box"   disabled="true" /></td>
     </tr>
     <tr>
         <td><form:label class="label-Font" path="email">Email</form:label></td>
-        <td><form:input path="email" id="txtemail" class="text-box" readonly="true" /></td>
+        <td><form:input path="email" id="txtemail" class="text-box" disabled="true"  /></td>
     </tr>
     <tr>
         <td><form:label class="label-Font" path="telephone">Phone</form:label></td>
-        <td><form:input path="telephone"  id="txttelephone" class="text-box" readonly="true"/></td>
+        <td><form:input path="telephone"  id="txttelephone" class="text-box" disabled="true" /></td>
     </tr>
      <tr>	
         <td><form:label class="label-Font" path="id">Description</form:label></td>
-        <td><form:textarea path="description" id="txtdesc" readonly="true" class="text-box" style="height:75px;" /></td>
+        <td><form:textarea path="description" id="txtdesc" disabled="true"  class="text-box" style="height:75px;" /></td>
     </tr>
    
     <tr style="text-align: center;">
@@ -92,19 +95,19 @@
 </fieldset>
 <fieldset class="grey_bg">
  <legend><h2>Reply</h2></legend>
- <table>
+ <table style= "border:40px;width:100%;">
     
     <tr>
         <td><form:label class="label-Font" path="email">To</form:label></td>
         <td><form:input path="email" id="txtemail2" class="text-box" readonly="true" /></td>
     </tr>
     <tr>
-        <td><form:label class="label-Font" path="email">Subject</form:label></td>
-        <td><form:input path="replyContact.subject"  id="txtsubject" class="text-box" /></td>
+        <td><form:label class="label-Font" path="email" >Subject</form:label></td>
+        <td><form:input path="replyContact.subject"  id="txtsubject" class="text-box" style="width:600px;"/></td>
     </tr>
      <tr>	
         <td><form:label class="label-Font" path="description">Description</form:label></td>
-        <td><form:textarea path="replyContact.description" id="txtreplydescription"  class="text-box" style="height:75px;" /></td>
+        <td><form:textarea path="replyContact.description" id="txtreplydescription"  class="text-box" style="height:75px;width:600px;" /></td>
     </tr>
    
     <tr style="text-align: center;">
@@ -119,8 +122,8 @@
  </fieldset>
 
 </form:form>
-</span >
 
+</div>
 
 
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>

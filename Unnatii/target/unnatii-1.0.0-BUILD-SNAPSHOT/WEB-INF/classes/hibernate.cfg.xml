@@ -9,6 +9,7 @@
         <mapping class="com.unnatii.in.model.Contact" />
         <mapping class="com.unnatii.in.model.ReplyContact" />
 		<mapping class="com.unnatii.in.model.SpecSheet" />
+		<mapping class="com.unnatii.in.model.ReplyQuote" />
         
     </session-factory>
 	    
