@@ -14,7 +14,6 @@ public class AdminController {
  
 		model.addAttribute("message", "Spring Security Hello World");
 		return "/admin/dashboard";
-		
 	}
  
 	
