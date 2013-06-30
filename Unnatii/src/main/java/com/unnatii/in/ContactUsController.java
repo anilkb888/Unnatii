@@ -137,7 +137,7 @@ public class ContactUsController {
 
 			//mailService.sendMail(contact.getEmail(), "unnatiigss@gmail.com",contact.getReplyContact().getSubject() ,contact.getReplyContact().getDescription());
 
-		 System.out.println("Suucessfully Inserted reply");
+		 System.out.println("Successfully Inserted reply");
 			//System.out.println("Name : "+ contact.getName() +"\n\nPhone Number : " + contact.getTelephone() +"\n\nDescription : " + contact.getDescription());
 
 			/*model.addAttribute("email", contact.getEmail());*/
