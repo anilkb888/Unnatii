@@ -2,12 +2,12 @@ package com.unnatii.in.dao;
 
 import java.util.List;
 
-import com.unnatii.in.model.Contact;
-
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import com.unnatii.in.model.Contact;
 
 @Repository
 public class ContactDAOImpl implements ContactDAO {
