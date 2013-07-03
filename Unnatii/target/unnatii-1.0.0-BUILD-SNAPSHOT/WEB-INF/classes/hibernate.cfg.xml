@@ -10,6 +10,8 @@
         <mapping class="com.unnatii.in.model.ReplyContact" />
 		<mapping class="com.unnatii.in.model.SpecSheet" />
 		<mapping class="com.unnatii.in.model.ReplyQuote" />
+		<mapping class="com.unnatii.in.model.Product" />
+		<mapping class="com.unnatii.in.model.Template" />
         
     </session-factory>
 	    

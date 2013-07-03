@@ -58,9 +58,9 @@ div.mc-caption a:hover {
 
 /* ------ built-in navigation bullets wrapper ------*/
 div.navBulletsWrapper  {
-	top:320px;/* Its position is relative to the #slider */
-	margin:0 auto;
-	padding-left:10%;
+	top:280px;/* Its position is relative to the #slider */
+	/* margin:0 auto; */
+	padding-left:3%; 
 	width:150px;
 	background:none;
 	position:relative;

@@ -19,41 +19,33 @@ public class ProductsDAOImpl implements ProductsDAO {
 		sessionFactory.getCurrentSession().save(product);
 		//sessionFactory.getCurrentSession().getTransaction().commit();
 	}
-
-	/*public List<Contact> listContact() {
-		
+	
+     public List<Product> listProduct() {		
 		Query qry;
-		qry=sessionFactory.getCurrentSession().createQuery("from Contact ORDER BY ID DESC");
-		//qry.setFirstResult(startPoint);
-		//qry.setMaxResults();
-		return qry.list();
-		//return sessionFactory.getCurrentSession().createQuery("from Contact")
-			//	.list();
+		qry=sessionFactory.getCurrentSession().createQuery("from Product ORDER BY ID DESC");
+				return qry.list();
 		
-				//return sessionFactory.getCurrentSession().createQuery("").list();
 	}
 
-public List<Contact> listSpecificContact(Integer contactId) {
+	
+
+public List<Product> listSpecificProduct(Integer productId) {
 		
 		Query qry;
-		qry=sessionFactory.getCurrentSession().createQuery("from Contact where ID =" + contactId );
-		//qry.setFirstResult(startPoint);
-		//qry.setMaxResults();
-		return qry.list();
-		//return sessionFactory.getCurrentSession().createQuery("from Contact")
-			//	.list();
+		qry=sessionFactory.getCurrentSession().createQuery("from Product where ID =" + productId );
 		
-				//return sessionFactory.getCurrentSession().createQuery("").list();
+		return qry.list();
+		
 	}
 	
-	public void removeContact(Integer id) {
-		Contact contact = (Contact) sessionFactory.getCurrentSession().load(
-				Contact.class, id);
+	public void removeProduct(Integer id) {
+		Product contact = (Product) sessionFactory.getCurrentSession().load(
+				Product.class, id);
 		if (null != contact) {
 			sessionFactory.getCurrentSession().delete(contact);
 		}
 
 	}
 
-*/
+
 }

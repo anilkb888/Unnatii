@@ -58,7 +58,7 @@
    <table>
     <tr>
         <td><form:label class="label-Font" path="name">Name<font color="red">*</font></form:label></td>
-        <td><form:input path="name" id="txtname" class="text-box" placeholder="FirstName LastName"/></td>
+        <td><form:input path="name" id="txtname" class="text-box" placeholder="Product Name"/></td>
     </tr>
     <tr>
         <td><form:label class="label-Font" path="productCode">Product Code<font color="red">*</font></form:label></td>

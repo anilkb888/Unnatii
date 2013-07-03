@@ -32,7 +32,7 @@ public class Product {
 	@Column(name="IMAGE")
 	private String image;
 	
-	@Column(name="IMAGE_PATH")
+
 	private CommonsMultipartFile fileData;
 
 
@@ -88,7 +88,7 @@ public class Product {
 
 	public void setFileData(CommonsMultipartFile fileData) {
 	    this.fileData = fileData;
-        this.name = fileData.getOriginalFilename();
+       // this.name = fileData.getOriginalFilename();
 	}
 
 	public String getStatus() {

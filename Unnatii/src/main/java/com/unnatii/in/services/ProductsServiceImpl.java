@@ -1,5 +1,7 @@
 package com.unnatii.in.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
@@ -19,22 +21,24 @@ public class ProductsServiceImpl implements ProductsService {
 	public void addProduct(Product product) {
 		productsDAO.addProducts(product);
 	}
-
-	/*@Required
-	public List<Contact> listContact() {
-
-		return contactDAO.listContact();
-	}
 	
 	@Required
-	public List<Contact> listSpecificContact(Integer contactId)
+	public List<Product> listProduct() {
+
+		return productsDAO.listProduct();
+	}
+
+	
+	
+	@Required
+	public List<Product> listSpecificProduct(Integer productId)
 	{
-		return contactDAO.listSpecificContact(contactId);
+		return productsDAO.listSpecificProduct(productId);
 	}
 	
 	
 	@Required
-	public void removeContact(Integer id) {
-		contactDAO.removeContact(id);
-	}*/
+	public void removeProduct(Integer id) {
+		productsDAO.removeProduct(id);
+	}
 }
